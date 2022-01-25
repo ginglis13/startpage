@@ -1,0 +1,14 @@
+<h1>start page</h1>
+
+<h2>The Usual Suspects</h2>
+<ul>
+    <li><a href="https://lobste.rs">lobste.rs</a></li>
+    <li><a href="https://news.ycombinator.com">HN</a></li>
+</ul>
+
+<h2>Blogs and Other Feeds</h2>
+<ul>
+    {{range .Posts}}
+        <li><a href={{.Url}}>{{.Title}}</a> [{{.Source}}]</li>
+    {{end}}
+</ul>
