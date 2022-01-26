@@ -7,3 +7,14 @@ https://blog.rust-lang.org/feed.xml
 https://blog.rust-lang.org/inside-rust/feed.xml
 https://googleonlinesecurity.blogspot.com/atom.xml
 https://pythonspeed.com/atom.xml
+https://seb.jambor.dev/feed.xml
+https://ma.rkusa.st/feed.xml
+https://viralinstruction.com/feed.xml
+https://github.blog/atom
+https://cheapskatesguide.org/cheapskates-guide-rss-feed.xml
+http://tomerfiliba.com/blog/atom.xml
+https://www.philipotoole.com/feed
+https://www.sethvargo.com/feed.xml
+https://divan.dev/index.xml
+https://rakyll.org/index.xml
+https://www.ncameron.org/blog/rss/
