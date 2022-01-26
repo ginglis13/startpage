@@ -1,0 +1,9 @@
+https://drewdevault.com/blog/index.xml
+https://dave.cheney.net/atom
+https://research.swtch.com/feed.atom
+https://blog.domenic.me/atom.xml
+https://christine.website/blog.rss
+https://blog.rust-lang.org/feed.xml
+https://blog.rust-lang.org/inside-rust/feed.xml
+https://googleonlinesecurity.blogspot.com/atom.xml
+https://pythonspeed.com/atom.xml
