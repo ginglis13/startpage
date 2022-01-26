@@ -1,27 +1,52 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-<link rel=”stylesheet” type="text/css" href=”/Users/ginglis/projects/start-page-lambda/site.css”>
-</head>
+    <head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="https://ginglis.me/site.css">
+    </head>
 
-<body class="hack dark main container">
-    <div itemprop="articleBody">
-<h1>start page</h1>
+    <body class="hack dark main container">
 
-<h2>The Usual Suspects</h2>
-<ul>
-    <li><a href="https://lobste.rs">lobste.rs</a></li>
-    <li><a href="https://news.ycombinator.com">HN</a></li>
-</ul>
+        <header>
+            <nav itemscope itemtype="http://schema.org/SiteNavigationElement">
 
-<h2>Blogs and Other Feeds</h2>
-<ul>
-    {{range .Posts}}
-        <li><a href={{.Url}}>{{.Title}}</a> [{{.Source}}]</li>
-    {{end}}
-</ul>
-</div>
-</body>
+                <a itemprop="url"
+                class=""
+                href="https://ginglis.me">
+                <span itemprop="name">Home
+                </span></a>
+
+                <a itemprop="url"
+                class=""
+                href="https://ginglis.me/whoami">
+                <span itemprop="name">whoami
+                </span></a>
+
+            </nav>
+        </header>
+
+
+        <div itemprop="articleBody">
+        <h1>start page</h1>
+
+        <h2>The Usual Suspects</h2>
+        <ul>
+            <li><a href="https://lobste.rs" target="_blank">lobste.rs</a></li>
+            <li><a href="https://news.ycombinator.com" target="_blank">HN</a></li>
+        </ul>
+
+        <!-- where the magic happens -->
+        <h2>Blogs and Other Feeds</h2>
+        <ul>
+            {{range .Posts}}
+                <li><a href={{.Url}} target="_blank">{{.Title}}</a> [{{.Source}}]</li>
+            {{end}}
+        </ul>
+        </div>
+
+        <script data-goatcounter="https://ginglis.goatcounter.com/count"
+                async src="//gc.zgo.at/count.js"></script>
+    </body>
 
 </html>
