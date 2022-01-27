@@ -18,3 +18,5 @@ https://www.sethvargo.com/feed.xml
 https://divan.dev/index.xml
 https://rakyll.org/index.xml
 https://www.ncameron.org/blog/rss/
+https://www.factoftheday1.com/feed
+https://blog.mozilla.org/en/feed
