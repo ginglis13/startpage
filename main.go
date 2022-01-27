@@ -64,7 +64,7 @@ func readFeedConfig() []Feed {
 // parseFeedForNewPosts finds posts made within the pastTime interval.
 func parseFeedForNewPosts(url string) (*Post, error) {
 	// set 1s timeout
-	ctx, cancel := context.WithTimeout(context.Background(), 1*time.Second)
+	ctx, cancel := context.WithTimeout(context.Background(), 3*time.Second)
 	defer cancel()
 
 	fp := gofeed.NewParser()
