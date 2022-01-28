@@ -17,6 +17,8 @@ generate a startpage of links for a static site hosted via AWS
 
 ## How to Use It
 
+**note**: the feeds and startpage are not generalized - they are what I personally use. If you wish to you this I'd recommend fork -> update these to your liking.
+
 1. Create a Lambda function. 
 2. Give the Lambda write access to the static site's S3 bucket.
 3. Give it some environment variables:
