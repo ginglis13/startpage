@@ -20,3 +20,7 @@ https://rakyll.org/index.xml
 https://www.ncameron.org/blog/rss/
 https://www.factoftheday1.com/feed
 https://blog.mozilla.org/en/feed
+https://peppe.rs/index.xml
+https://c418.org/feed
+https://ebiten.org/blog/feed
+https://iximiuz.com/feed.atom
