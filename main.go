@@ -39,7 +39,8 @@ type Post struct {
 }
 
 type StartPageData struct {
-	Posts []Post
+	Posts       []Post
+	LastUpdated time.Time
 }
 
 // readFeedConfig reads rss / atom feeds from a config text file
@@ -100,7 +101,8 @@ func fetchFeed(feed Feed, postChan chan Post, wg *sync.WaitGroup) {
 // generateStartpage reads from the channel of new posts and returns the populated
 // startpage html template as an io.Reader to be used as the PutObject request Body.
 func generateStartpage(postChan <-chan Post) io.Reader {
-	startPageData := StartPageData{}
+	localPDT := time.FixedZone("UTC-8", -8*60*60)
+	startPageData := StartPageData{LastUpdated: time.Now().In(localPDT)}
 
 	for post := range postChan {
 		startPageData.Posts = append(startPageData.Posts, post)
